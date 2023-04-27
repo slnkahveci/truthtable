@@ -2,10 +2,15 @@
 	\centering
 	\begin{tabular}{c|c||c|c|c|c|c|c|c}
 
-		% Content of table is generated using this single command.
+		% Content of table is generated using this single command with default order (TTT to FFF)
 		\truthtable{A,B}{$A$,$B$}
 		{!A, A & B, A | B, ^(A; B), !&(A; B), >>(A; B), <>(A; B)}{$\lnot A$, $A \land B$, $A \lor B$,$A \veebar B$,$A | B$, $A \rightarrow B$, $A \leftrightarrow B$}
 		{$T$}{$F$}
-		
+
+		% Content of table is generated using this single command with inverted order (FFF to FFF)
+		\truthtable[desc]{A,B}{$A$,$B$}
+		{!A, A & B, A | B, ^(A; B), !&(A; B), >>(A; B), <>(A; B)}{$\lnot A$, $A \land B$, $A \lor B$,$A \veebar B$,$A | B$, $A \rightarrow B$, $A \leftrightarrow B$}
+		{$T$}{$F$}
+
 	\end{tabular}
 \end{table}
